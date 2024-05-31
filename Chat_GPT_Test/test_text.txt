@@ -1,0 +1,85 @@
+**Introduction**
+
+Design is defined as both “the process of defining the architecture,
+components, interfaces, and other characteristics of a system or component” and
+“the result of [that] process” [1]. Viewed as a process, software design is the
+software engineering life cycle activity in which software requirements are
+analyzed in order to produce a description of the software’s internal structure
+that will serve as the basis for its construction. A software design (the
+result) describes the software architecture - that is, how software is
+decomposed and organized into components - and the interfaces between those
+components. It should also describe the components at a level of detail that
+enables their construction.
+
+Software design plays an important role in developing software: during software
+design, software engineers produce various models that form a kind of blueprint
+of the solution to be implemented. We can analyze and evaluate these models to
+determine whether or not they will allow us to fulfill the various
+requirements.
+
+We can also examine and evaluate alternative solutions and tradeoffs. Finally,
+we can use the resulting models to plan subsequent development activities, such
+as system verification and validation, in addition to using them as inputs and
+as the starting point of construction and testing. In a standard list of
+software life cycle processes, such as that in ISO/IEC/IEEE Std. 12207,
+Software Life Cycle Processes [2], software design consists of two activities
+that fit between software requirements analysis and software construction:
+
+- Software architectural design (sometimes called high-level design): develops
+  top-level structure and organization of the software and identifies the
+  various components.
+- Software detailed design: specifies each component in sufficient detail to
+  facilitate its construction.
+
+This Software Design knowledge area (KA) does not discuss every topic that
+includes the word “design.” In Tom DeMarco’s terminology [3], the topics
+discussed in this KA deal mainly with D-design (decomposition design), the goal
+of which is to map software into component pieces. However, because of its
+importance in the field of software architecture, we will also address
+FP-design (family pattern design), the goal of which is to establish
+exploitable commonalities in a family of software products. This KA does not
+address I-design (invention design), which is usually performed during the
+software requirements process with the goal of conceptualizing and specifying
+software to satisfy discovered needs and requirements, since this topic is
+considered to be part of the requirements process (see the Software
+Requirements KA).
+
+This Software Design KA is related specifically to the Software Requirements,
+Software Construction, Software Engineering Management, Software Engineering
+Models and Methods, Software Quality, and Computing Foundations KAs.
+
+**Breakdown Of Topics For Software Design**
+
+The breakdown of topics for the Software Design KA is shown in Figure 2.1.
+
+### 1. Software Design Fundamentals
+
+The concepts, notions, and terminology introduced here form an underlying basis
+for understanding the role and scope of software design.
+
+#### 1.1. General Design Concepts
+
+<!-- [4*, c1] -->
+
+In the general sense, design can be viewed as a form of problem solving. For
+example, the concept of a wicked problem - a problem with no definitive
+solution - is interesting in terms of understanding the limits of design. A
+number of other notions and concepts are also of interest in understanding
+design in its general sense: goals, constraints, alternatives, representations,
+and solutions (see Problem Solving Techniques in the Computing Foundations KA).
+
+#### 1.2. Context of Software Design
+
+<!-- [4*, c3] -->
+
+Software design is an important part of the software development process. To
+understand the role of software design, we must see how it fits in the software
+development life cycle. Thus, it is important to understand the major
+characteristics of software requirements analysis, software design, software
+construction, software testing, and software maintenance.
+
+#### 1.3. Software Design Process
+
+<!-- [4*, c2] -->
+
+Software design is generally considered a two-step process:
