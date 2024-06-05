@@ -32,7 +32,6 @@ def split_document_by_page(pdf_file):
 
     split_pages = []
 
-    #with open(pdf_path, 'rb') as file:
     for page in PDFPage.get_pages(pdf_file):
         interpreter.process_page(page)
         layout = device.get_result()
@@ -43,7 +42,6 @@ def split_document_by_page(pdf_file):
                 text_blocks.append(text)
         page_text = '\n'.join(text_blocks)
         split_pages.append(page_text)
-
 
     return split_pages
 def callChatgpt(system_prompt,user_prompt):
@@ -220,7 +218,7 @@ def final_evaluation(message):
     prompt1 = '''请根据下述对于多份作业评价生成对该学生能力成长的总评,请注意：
                     1.内容来自同一个学生的不同作业的评价集合。每份评价都包含1.学生知识能力；2.学生知识缺陷；3.进一步学习建议三个部分。
                     2.评价集合内容是按照时间顺序排序的。
-                    3.请按照顺序考虑所有评价内容，评价学生在哪些方面有所进步，在那些方面有所退步，请不要丢失原评价集合中的内容。
+                    3.请按照顺序考虑所有评价内容，评价学生在哪些方面有所进步，在那些方面有所退步，请保留原评价集合中的主要内容，所有内容请分点回答。
                     4.请汇总进一步学习建议，删除重复部分，放在评价最后，命名为：“对该生的进一步学习建议如下”。
                     5.以下为多份评价：'''
     response = callChatgpt(sys_prompt, prompt1 + message)
@@ -245,7 +243,7 @@ def test_single():
 
     res = final_evaluation(classifier_ans_list)
     save_path = "./Gradio_processed"
-    num = 0
+    num = 1
     with open(save_path + '/final_ans_direct' + str(num) + '.txt', 'w', encoding='utf-8') as file:
         file.write(res)
     print("======final evaluation========:\n", res)
@@ -266,7 +264,7 @@ def single_evaluation(folder_path):
 
         res = final_evaluation(classifier_ans_list)
         save_path = "./Gradio_processed"
-        num = 0
+        num = 1
         with open(save_path + '/final_ans' + str(num) + '.txt', 'w', encoding='utf-8') as file:
             file.write(res)
         print("======final evaluation========:\n", res)

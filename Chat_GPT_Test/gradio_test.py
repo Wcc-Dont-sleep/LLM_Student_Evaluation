@@ -18,7 +18,7 @@ def generate_evaluation(file_path,progress=gr.Progress()):
             file_name = file_list[i]
             with zip_ref.open(file_name) as file:
                 time.sleep(2)
-                res, _ = summary(file, i)
+                res, _ = summary(file, i+9)
 
                 classifier_ans_list += (f"第{i + 1}份评价如下：{res}")
 
@@ -41,15 +41,15 @@ def generate_evaluation_1(file_path):
     return output, end_time-start_time
 block = gr.Blocks(theme=gr.themes.Monochrome())
 with block:
-    gr.Markdown("""<h1><center>🤖️对话机器人</center></h1>
+    gr.Markdown("""<h1><center>课程交付物智能分析系统</center></h1>
     """)
     gr.Markdown("""<h2><center>请上传一份包含有学生系列课程项目文档的ZIP格式文件</center></h1>
         """)
     #chatbot = gr.Chatbot()
     #message = gr.Textbox(placeholder="请提交你的文件")
     file = gr.File(file_count="single")
-    time_text = gr.Textbox()
-    evaluation = gr.Textbox()
+    time_text = gr.Textbox(label="总用时",placeholder="评价结束后将展示总用时")
+    evaluation = gr.Textbox(label="学生个人能力成长评价")
 
 
     #submit = gr.Button("发送")

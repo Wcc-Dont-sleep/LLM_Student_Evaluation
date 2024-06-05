@@ -1,0 +1,66 @@
+项目目标是搭建校园线上运动社区，通过线上约球、个性化运动目标定制、在线互动等形式，激发大家的运动热情。主要功能包括约球与场地预定，个性化定制，体育类社团管理，内容发布与交流以及其他功能如排行榜和有偿培训渠道。软件工程知识能力体现在需求分析与功能设计上，包括用户认证、信息交互、个性化定制和社团管理等方面。缺陷可能出现在系统安全性和用户体验设计上，需要考虑数据隐私保护和界面友好性。
+预期用户与关键目标：济动主要面向同济大学学生与教职工，通过上传一卡通等资料认证用户身份。旨在建立线上运动社区，便利师生运动交流，激发运动热情，促进校园运动氛围。软件工程知识能力总结：涉及用户需求分析和功能设计，通过认证机制保障信息安全；强调社区交流与用户体验设计，体现用户参与性和互动性；关注系统可用性和定制化功能，提供个性化服务。缺陷：未提及用户反馈机制和持续改进策略。
+
+同类产品功能对比：济动与Keep、Nike Training Club等产品相比，具备个性化定制、社区交流、运动场地预约、运动排行等功能。创新性在于私人运动目标定制和针对学生体育课程的活动安排。社区交流模块与其他平台类似，但更贴近校园生活。提供校园内运动场地预定服务，突出校园特色。软件工程知识能力总结：涉及功能设计和需求分析，体现个性化定制和社区交流；强调系统扩展性和服务定位，考虑用户使用场景和便捷性。缺陷：未明确技术实现方案和数据管理策略。
+济动是为校园定制的线上运动社区，提供校园内运动场地预定功能和社团管理服务，使运动更贴近学生群体。运动排行榜功能改版，可统计用户能力值和排名，激励运动参与。同时允许认证教师指导训练。软件工程知识能力体现在需求分析和功能设计上，但可能面临校方支持问题，需要解决开发者与学校理念不同的困难，通过洽谈达成一致。
+
+未来发展规划包括试运行后扩大至上海市所有高校，最终覆盖全国高校，打造最大、稳定、完善的校园线上运动社区。连接不同高校，促进体育交流和竞争，推动中国高校体育发展。这展现了软件工程知识中的项目规划和扩展能力，但也暴露出需要处理多校体育交流壁垒的挑战。
+项目后续的研发可能需要资金的支持，这涉及到软件工程中的项目管理知识。在软件开发过程中，资金支持是确保项目顺利进行的重要因素之一。同时，平台的管理和安全性需要技术支持和长期维护，这体现了软件工程中的系统架构设计和软件维护知识。技术人员需要持续关注平台的管理和安全性，以确保系统稳定运行和数据安全。
+
+相关技术方面，后端搭建使用了 TypeScript 在基于 Node.js 的 nest.js 框架上进行服务器开发。这体现了软件工程中的后端开发知识，Node.js作为一个JavaScript运行环境开发平台，提供了快速高效的后端开发能力。另外，数据处理部分采用基于 MySQL 的DBMS维护网站相关信息，这展现了软件工程中的数据库设计和管理知识。MySQL作为一种关系型数据库管理系统，具有高效、成本低等优点，适合用于存储和管理网站数据。
+主要选用 CSS 和 JavaScript 框架来对网页进行前端设计。CSS是一种用来表现HTML等文件样式的计算机语言，能够精确排版网页元素，具有高效编辑能力。Vue.js是优秀的渐进式JavaScript框架，易用、灵活、性能好，便于整合第三方库或已有项目，丰富社区界面。这体现了软件工程师在前端设计中运用CSS进行页面样式布局和JavaScript框架构建用户界面的能力，同时展示了对开源框架的熟练应用和整合能力。
+
+收获成长
+技术成长方面，团队在服务器端采用了nest.js框架和MySQL数据库管理，网页端则运用CSS和JavaScript进行设计。这些新知识对团队来说是挑战，但随着项目深入，团队将逐步提升代码能力，熟悉服务器端和网页端环境。团队合作方面，项目进展需要团结协作和细致分工，合理安排人员与时间以提高效率。通过项目实施，团队学会了如何有效地合作，而不是单打独斗或盲目写代码。
+在项目目标方面，通过构建校园在线体育社区，激发大家对体育的热情，实现在线约会、个性化运动目标定制和在线互动。这体现了软件工程中的需求分析和功能设计能力，以及用户体验设计的重要性。然而，缺乏具体的目标量化指标和用户调研数据可能导致项目目标不够明确，需要进一步完善。
+
+主要功能和项目特点包括成员列表（按姓氏笔画排序）：杨梓浩，李航宇，郑柯凡，胡启云，曹峰源。该部分展示了团队成员信息的组织方式，体现了软件工程中团队协作和项目管理的能力。然而，在没有提及具体的功能模块和技术架构的情况下，缺乏对系统整体架构和开发流程的描述，需要进一步完善和详细规划。
+在软件设计文档中，用户可以通过平台向其他用户发起球场预约信息，包括体育场馆、预期运动时间等具体细节。认证为同济大学教师和学生的用户可以进行这一操作。接收到信息的用户可以选择是否接受。此外，预约成功后用户可以直接预订学校场地。这体现了软件工程中的用户交互设计能力，包括用户角色划分、信息传递机制设计以及系统操作流程规划。然而，文档未提及对用户身份认证的具体实现方式，缺乏安全性设计方面的考虑。
+Personalized customization involves allowing users to define exercise goals and receive tailored exercise plans based on their goals and personal information. This capability demonstrates knowledge in user-centered design and requirements engineering, as it considers individual preferences and needs to enhance user experience. However, the summary lacks details on how the platform implements personalized customization, such as algorithms used for goal setting and customization, which could highlight expertise in software design and development.
+
+Sports club management feature enables sports clubs to request online management functions on the platform, empowering club officials to share activity updates and attract new members. This functionality showcases knowledge in system extensibility and user access control, as it expands platform capabilities to accommodate diverse user roles and activities. Nevertheless, the summary overlooks specifics like communication channels between clubs and members, missing an opportunity to demonstrate proficiency in communication protocols and system integration.
+在内容发布和沟通方面，用户可以在平台上发布与体育相关的文章、视频和其他内容，同时分享自己的体育经验。其他用户可以留言和评论。这展现了软件工程中的用户交互设计和社交功能。然而，缺乏对内容的审核机制可能导致信息质量参差不齐，需要加强内容管理和用户反馈系统以提升用户体验。
+
+在其他功能方面，包括排名功能和奖励机制，最高排名用户可获得一定奖励。此外，提供付费培训渠道，允许认证用户发布体育技能培训信息。这体现了软件工程中的激励机制设计和权限管理。然而，需要注意平衡激励措施的公平性，避免排名机制带来的不良竞争行为，同时确保培训信息的真实性和有效性。
+
+预期用户和关键目标涵盖了软件工程中的用户需求分析和目标设定。通过明确预期用户群体和主要目标，有助于指导软件开发过程中的功能设计和优先级确定。然而，需要进一步细化用户画像和目标细分，以更好地满足不同用户群体的需求，提高用户满意度和平台的可持续发展。
+Expected Users and Key Goals:
+The software JiDong targets students, faculty, and staff of Tongji University, aiming to create an online sports community. Users can upload materials for authentication, fostering a convenient exercise platform. The key goals include enhancing sports communication, boosting sports enthusiasm, and cultivating a vibrant sports atmosphere on campus. However, the document lacks details on user requirements gathering, which is crucial for aligning software features with user needs effectively.
+
+Similar Products:
+The document does not mention any existing similar products to JiDong in the market. It is essential to conduct a thorough market analysis to identify competitors and understand their strengths and weaknesses. This information can help in positioning JiDong effectively in the market and differentiating it from competitors. Additionally, the absence of a competitive analysis may lead to missed opportunities for improvement and innovation based on industry best practices.
+在学生设计的软件文档中，展现了对类似产品的功能比较。这部分体现了软件工程师需要具备对竞品分析的能力。通过比较不同产品的功能，可以评估自身产品的优势和劣势，为产品改进提供方向。然而，文档中可能存在的不足之处是缺乏对竞品分析的深入挖掘，如对用户体验、性能等方面的比较，这些细节对于完善产品设计和开发至关重要。因此，软件工程师需要在竞品分析中注重全面性和深度，以提升产品的竞争力。
+
+---
+In the student-designed software document, a comparison of functions between similar products and their own product is presented. This demonstrates the software engineer's ability to conduct competitive analysis. By comparing the functionalities of different products, one can assess the strengths and weaknesses of their own product, providing direction for product improvement. However, a potential shortcoming in the document may be the lack of in-depth exploration in competitive analysis, such as comparison in user experience, performance, etc., which are crucial for enhancing product design and development. Therefore, software engineers need to focus on comprehensiveness and depth in competitive analysis to enhance the competitiveness of the product.
+Platforms like Nike Training Club, Keep, and JiDong are utilized for personalized customization and community communication in the software design. These platforms excel in features such as ranking and campus integration. However, the absence of stadium reservation functionality poses a limitation. The software showcases strengths in fostering a sense of community among users and offering tailored fitness solutions. It innovatively combines social interaction with fitness tracking, enhancing user engagement and motivation. The software's specific analysis highlights its emphasis on user-centric design and interactive features that promote a holistic fitness experience.
+私人定制的体育目标功能类似于主要软件，平台可以为个人运动偏好量身定制训练计划。此外，与其他平台相比，JiDong可以根据学生用户所选的体育课程安排有针对性的活动。JiDong类似于其他社区，允许用户分享与体育相关的内容。这体现了软件工程中的需求分析和功能设计能力，同时也展示了对用户个性化需求的理解和满足。然而，可能存在对用户数据隐私保护方面的不足，需要进一步加强隐私安全设计。
+在社区通信模块方面，JiDong平台与校园生活更为密切相关。JiDong能够提供相应的校园服务，包括校园体育场馆的预约功能。此外，对学校体育俱乐部的管理使得俱乐部更贴近学生群体，让更多人热爱运动。这反映了软件工程中对于社区交流和用户需求的重视，同时也展现了对于用户体验和功能设计的关注。然而，可能存在对于数据安全和隐私保护等方面的不足，需要进一步加强。
+从JiDong的体育排名功能来看，该软件涵盖了软件工程中的排名算法设计和用户激励机制。通过计算用户在某项运动中的能力值和排名，激发用户更多参与的动力。然而，可能存在排名算法的准确性和公平性方面的挑战，需要考虑如何确保排名结果客观合理，避免用户因算法不公平而受到影响。
+
+JiDong是一个定制化校园在线体育社区，涉及软件工程中的定制化开发和社区功能设计。在校园环境中，提供球类约战和跑步约战等游戏可以丰富师生的日常生活。此外，允许认证教练进行指导训练（可付费），体现了软件工程中社区功能的设计和实现。然而，可能需要考虑如何确保教练资质认证的真实性和培训质量的监管机制。
+在软件工程领域，团队计划在同济大学试运营成熟且平台生态稳定后，增加对平台的投资并加快项目迭代。这体现了项目管理中的项目规划和迭代开发的重要性，以确保项目成功实施和持续改进。然而，文档未提及具体的风险管理策略或变更控制机制，这可能导致在项目扩展过程中出现不可预测的问题。
+
+我们的最终目标是将吉东打造成中国最大的在线体育社区，覆盖全国各大高校。这反映了软件工程中的系统架构设计和扩展性考虑。通过逐步扩大项目范围，团队需要关注系统的可伸缩性和性能，以应对用户量的增长。然而，文档未提及具体的系统架构方案或性能测试计划，这可能影响未来系统的稳定性和可靠性。
+学生设计的软件文档中提到了建立多校体育竞赛、制定大学体育排名等功能，以促进中国大学体育发展。这体现了软件工程领域的系统设计能力，包括需求分析、功能设计和系统集成。然而，文档未提及具体的需求调研和用户反馈，可能导致功能设计与实际需求脱节，缺乏用户体验优化。在软件开发过程中，需重视用户参与和反馈机制，确保系统设计符合实际需求，提高软件质量和用户满意度。
+1. 学校场馆预订需求支持学校的社区管理模式，但开发人员与负责体育事务的学校人员在概念上存在差异，需要协商时间。这反映了软件工程中需求分析阶段的重要性，开发团队应深入了解用户需求，确保软件设计符合实际使用情况。同时，沟通和协商能力也是软件工程师必备的技能，有助于解决不同利益相关者之间的观念差异。
+
+2. 项目后续的研发可能需要财务支持，这强调了软件工程中项目管理和成本估算的重要性。团队需要制定详细的项目计划和预算，确保资源合理分配，同时在开发过程中及时评估成本变化，以避免超出预算。财务管理能力是软件工程师必备的技能之一，有助于项目顺利进行并控制开支。
+
+3. 平台的管理和安全性需要技术人员提供长期维护和技术支持，突出了软件工程中系统运维和安全保障的重要性。技术支持团队应建立有效的运维机制，及时处理平台问题并保障数据安全。此外，软件工程师需要具备系统架构设计和安全防护等技能，以确保软件系统稳定运行并防范潜在风险。
+在相关技术方面，使用TypeScript进行服务器开发，基于Node.js的nest.js框架。Node.js是基于Chrome V8引擎的JavaScript运行时环境开发平台，孵化了诸如koa2和express等优秀传统框架，而nest.js则基于express。这种选择具有良好的生态和低维护成本。在构建方面，通过选择合适的技术栈，可以提高开发效率和系统稳定性，同时降低维护成本。在数据处理方面，需要考虑数据的输入、存储、处理和输出，以确保系统能够高效地处理大量数据并提供准确的结果。
+在数据处理方面，网站相关信息将由基于MySQL的DBMS维护。MySQL是一种关系型数据库管理系统，具有快速、体积小、成本低和开源等优势。用户通过浏览器入口的统一资源定位符（URL）访问社区网站后，可以选择通过同济大学的统一认证登录并确认身份。账户信息（学号和密码）将被验证，用户可以执行各种操作。然而，文档未提及数据处理中的数据安全性措施或备份策略，这可能导致数据丢失或泄露风险。
+在设计方面，主要使用CSS和JavaScript框架进行网页前端设计。CSS是一种用于表达HTML和其他文件样式的计算机语言，能够准确排版网页中的各种元素，并高效地编辑网页对象和模型。JavaScript是一种常用的脚本语言，可实现网页的动态效果和交互功能。通过CSS和JavaScript框架，可以提高网页设计的效率和交互性。然而，在设计过程中需要注意兼容性和性能优化，以确保网页在不同浏览器和设备上都能正常展示和运行。
+Vue.js是一个优秀的渐进式JavaScript框架，用于构建用户界面。它易于使用、灵活且性能良好，可以与第三方库或现有项目轻松集成，从而丰富社区界面。在技术增长方面，项目的实施不仅建立了全新的校园社区并促进了学生的日常生活，也显而易见地促进了团队整体的成长。这体现了软件工程中对于选择适合的框架和技术来提升项目开发效率和团队整体能力的重要性。
+背景知识：软件工程包括技术能力和项目实施中的逐步提升。
+
+在学生设计的软件文档中，提到了使用nest.js框架和MySQL管理数据库的服务器端技术，以及使用CSS和JavaScript设计网页的前端技术。这展现了对服务器端和Web端技术的应用能力。然而，学生表示对这些知识相对陌生，需要在项目深入实施过程中逐步提升编码能力并熟悉服务器端技术。这表明在实践中逐步提高技术能力是软件工程中重要的一环，需要通过项目实施来增进对技术的理解和掌握。
+
+---
+
+背景知识：软件工程中的项目开发需要综合运用不同技术。
+
+学生设计的软件文档提到了技术分为服务器端和Web端两部分。服务器端采用nest.js框架和MySQL进行数据库管理，Web端则使用CSS和JavaScript设计网页。这体现了软件工程中项目开发时需要综合应用不同技术的能力。尽管学生目前对这些技术较不熟悉，但在项目实施过程中将逐步提升编码能力并更加熟悉服务器端技术。因此，项目开发中的技术综合运用是软件工程师需要具备的重要能力之一。
+在软件工程中，项目的进展不仅依赖于个别成员的努力，也不能简单地让每个人盲目编写代码来取得成功。在项目具体实施过程中，需要团结合作、细致分工。合理安排人员和时间，以最大化效率。这体现了团队协作和项目管理的重要性，只有通过合作分工，充分利用资源，才能有效推动项目进展。
+
+在软件设计中，需求分析是至关重要的一环。通过对用户需求的深入了解和准确把握，才能确保软件开发过程中不偏离初衷。需求分析阶段应该充分沟通，明确用户需求，并将其转化为可执行的软件规格说明。只有建立清晰的需求基础，才能为后续的设计和开发工作奠定坚实的基础。

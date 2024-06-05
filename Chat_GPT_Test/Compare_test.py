@@ -39,19 +39,23 @@ def split_document_by_page(pdf_file):
 
     return split_pages
 def callChatGLM6B(prompt):
-    response = openai.ChatCompletion.create(
-        model="gpt-3.5-turbo-0125",
-        temperature=0.8,
-        top_p=0.5,
-        frequency_penalty=0,
-        presence_penalty=0.8,
-        messages=[
+    for i in range(10):
+        try:
+            response = openai.ChatCompletion.create(
+                model="gpt-3.5-turbo-0125",
+                temperature=0.8,
+                top_p=0.5,
+                frequency_penalty=0,
+                presence_penalty=0.8,
+                messages=[
 
-            {"role": "user",
-             "content": prompt},
-        ]
-    )
-    return response
+                    {"role": "user",
+                     "content": prompt},
+                ]
+            )
+            return response
+        except Exception as e:
+            print(f"第{i + 1}次尝试失败...")
 
 def summary(pdf_path, num):
     # 使用示例
@@ -77,7 +81,7 @@ def summary(pdf_path, num):
         length_function=len
     )
     chunks = text_splitter.split_text(page_ans)
-    prompt = '''请对下述学生作业生成评价。'''
+    prompt = '''请对下述学生作业生成评价。控制字数在100字以内'''
 
 
     ans = ""
@@ -128,7 +132,11 @@ def single_evaluation(folder_path):
                 res = summary(file, i)
                 classifier_ans_list += (f"第{i+1}份评价如下：{res}")
 
-        res = callChatGLM6B(prompt_final + classifier_ans_list)
+        response = callChatGLM6B(prompt_final + classifier_ans_list)
+        res = ''
+        for choice in response.choices:
+            res += choice.message.content
+
         save_path = "./Gradio_compared_processed"
         num = 0
         with open(save_path + '/final_ans' + str(num) + '.txt', 'w', encoding='utf-8') as file:
